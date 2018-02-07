@@ -29,10 +29,16 @@ echo json_encode($usuarios);*/
 //echo $usuario;
 
 
-$aluno = new Usuario("aluno", "@alun0");
+//CRIANDO UM NOVO USUÁRIO
+//$aluno = new Usuario("aluno", "@alun0");
+//$aluno->insert();
+//echo $aluno;
 
-$aluno->insert();
-echo $aluno;
+
+$usuario = new Usuario();
+$usuario->loadById(13);
+$usuario->update("professor", "!@#$%¨&*");
+echo $usuario;
 
 
 ?>
